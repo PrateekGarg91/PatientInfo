@@ -1,14 +1,16 @@
 package com.healthcare.patientbackend.model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-public class Employee {
+@Entity
+public class Staff {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private long id;
     private String category;
     private String name;
     private String email;
@@ -18,7 +20,7 @@ public class Employee {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
