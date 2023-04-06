@@ -17,12 +17,12 @@ public class StaffController {
     @Autowired
     private StaffRepository staffRepository;
 
-    @PostMapping("/employee")
+    @PostMapping("/staff")
     Staff newEmployee(@RequestBody Staff newStaff){
         return staffRepository.save(newStaff);
     }
 
-    @GetMapping("/employees")
+    @GetMapping("/staffs")
     List<Staff> getAllEmployees(){
         return staffRepository.findAll();
     }
