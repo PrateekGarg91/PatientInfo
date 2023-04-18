@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 public class Staff {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private long id;
     private String category;
     private String name;

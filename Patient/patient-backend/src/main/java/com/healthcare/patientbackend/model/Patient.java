@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 public class Patient {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO )
+    @GeneratedValue
     private Long id;
     private String username;
     private String email;
